@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <!-- || header -->
+    <div class="header">
+      <ul class="header_menu_list">
+        <li><a href="#" class="hover_style">Gmail</a></li>
+        <li><a href="#" class="hover_style">Images</a></li>
+        <li>
+          <a href="#" class="nine_dots">
+            <img
+              class="nine_dots"
+              src="./assets/nine_dots.svg"
+              alt="nine_dots"
+            />
+          </a>
+        </li>
+        <li><a href="#" class="signin">Sign in</a></li>
+      </ul>
+    </div>
+
+    <!-- || google_logo -->
+    <div class="google_logo">
+      <img src="./assets/google_logo.png" alt="google" />
+    </div>
+
+    <!-- || search_box_container -->
+    <div class="search_box_container">
+      <div class="search_box">
+        <img
+          class="search_icon"
+          src="./assets/search_icon.svg"
+          alt="search_icon"
+        />
+        <input type="text" autofocus="autofocus" oninput="showClearIcon()" />
+        <img
+          src="./assets/clear_icon.svg"
+          alt="clear_icon"
+          onclick="clearInputField()"
+          class="clear_icon"
+        />
+
+        <img
+          class="voice_icon"
+          src="./assets/voice_icon.svg"
+          alt="voice_icon"
+        />
+      </div>
+      <div class="link_section">
+        <a href="#">Google Search</a>
+        <a href="#">I'm Feeling Lucky</a>
+      </div>
+      <div class="language_section">
+        <p>Google offered in:</p>
+        <div class="languages">
+          <a href="#">हिन्दी</a>
+          <a href="#">বাংলা</a>
+          <a href="#">తెలుగు</a>
+          <a href="#">मराठी</a>
+          <a href="#">தமிழ்</a>
+          <a href="#">ગુજરાતી</a>
+          <a href="#">ಕನ್ನಡ</a>
+          <a href="#">മലയാളം</a>
+          <a href="#">ਪੰਜਾਬੀ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- || footer -->
+    <div class="footer_container">
+      <div class="country_name">India</div>
+      <div class="footer_links">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Advertising</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">How Search Works</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      function showClearIcon() {
+        document.querySelector(".clear_icon").style.display = "block";
+      }
+      function clearInputField() {
+        document.querySelector("input").value = "";
+        document.querySelector(".clear_icon").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
